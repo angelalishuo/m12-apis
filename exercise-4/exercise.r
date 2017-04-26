@@ -20,7 +20,7 @@ query.parameters <- list(t=movie, r="json")
 # Make a variable called request that is a string of a request URL made up of the base URL
 # and the parameters string
 
-request <- GET(base.url, query = query.parameters)
+response <- GET(base.url, query = query.parameters)
 body <- content(response, "text")
 
 # Use fromJSON to retrieve JSON data from the omdb api using your request.
